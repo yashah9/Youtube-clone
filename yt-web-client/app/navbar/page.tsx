@@ -7,6 +7,7 @@ import styles from "./navbar.module.css";
 import { useEffect, useState } from "react";
 import { onAuthStateChangedHelper } from "../firbase/firebase";
 import { User } from "firebase/auth";
+import Upload from "./upload";
 
 
 function NavBar() {
@@ -31,7 +32,7 @@ function NavBar() {
         </span>
       </Link>
       {
-        // TODO : Upload button
+        user && <Upload />
       }
       <SignIn user={user} />
     </nav>
