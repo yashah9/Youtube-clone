@@ -15,6 +15,10 @@
   gap: 64px;
   font-family: var(--font-geist-sans);
 }
+.thumbnail {
+  margin: 15px;
+}
+
 
 @media (prefers-color-scheme: dark) {
   .page {
