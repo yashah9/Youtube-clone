@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { onAuthStateChangedHelper } from "../firbase/firebase";
 import { User } from "firebase/auth";
 import Upload from "./upload";
+import Image from "next/image";
 
 
 function NavBar() {
@@ -28,7 +29,7 @@ function NavBar() {
     <nav className={styles.nav}>
       <Link href="/">
         <span className={styles.logoContainer}>
-          <img className={styles.logo} src="/youtube-logo.svg" alt="YouTube Logo" />
+          <Image className={styles.logo} src="/youtube-logo.svg" alt="YouTube Logo" width={120} height={80} />
         </span>
       </Link>
       {
