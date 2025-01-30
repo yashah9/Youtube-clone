@@ -5,8 +5,6 @@ import Navbar from "./navbar/page";
 
 const inter = Geist({ subsets: ["latin"] });
 
-
-
 export const metadata: Metadata = {
   title: "Youtube",
   description: "Youtube Clone",
